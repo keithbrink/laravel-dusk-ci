@@ -84,7 +84,7 @@ RUN update-alternatives --set phar /usr/bin/phar7.4
 RUN update-alternatives --set phar.phar /usr/bin/phar.phar7.4
 # RUN update-alternatives --set phpize /usr/bin/phpize7.2
 # RUN update-alternatives --set php-config /usr/bin/php-config7.2
-RUN apt-get update && apt-get install -yq --fix-missing mc lynx mysql-client bzip2 make g++
+RUN apt-get update && apt-get install -yq --fix-missing mc lynx mysql-client postgresql-client bzip2 make g++
 
 # Install Redis, Memcached, Beanstalk
 RUN apt-get update && apt-get install -yq --fix-missing redis-server memcached beanstalkd
